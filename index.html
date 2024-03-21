@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotogalerie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image" href="icons/flavicon.png">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body onload="render()">
+    <header>
+        <img class="header-img" src="icons/kamera.webp" alt="Logo">
+
+        <div class="text">
+            <div class="wrapper">
+                <div class="letter">W</div>
+                <div class="shadow">W</div>
+            </div>
+            <div class="wrapper">
+                <div class="letter">E</div>
+                <div class="shadow">E</div>
+            </div>
+            <div class="wrapper">
+                <div class="letter">L</div>
+                <div class="shadow">L</div>
+            </div>
+            <div class="wrapper">
+                <div class="letter">C</div>
+                <div class="shadow">C</div>
+            </div>
+            <div class="wrapper">
+                <div class="letter">O</div>
+                <div class="shadow">O</div>
+            </div>
+            <div class="wrapper">
+                <div class="letter">M</div>
+                <div class="shadow">M</div>
+            </div>
+            <div class="wrapper">
+                <div class="letter">E</div>
+                <div class="shadow">E</div>
+            </div>
+        </div>
+        <a class="nav" href="./index.html">TO MY GALLERY</a>
+    </header>
+    <div id="content" class="content">
+        <div id="my_gallery" class="my-gallery">
+            <img onclick="fullscreen()" class="images d-none" src="img/bild 1.jpg">
+            <img onclick="fullscreen()" class="images d-none" src="img/bild4.jpg">
+            <img onclick="fullscreen()" class="images d-none" src="img/bild8.jpg">
+            <img onclick="fullscreen()" class="images d-none" src="img/bild13.jpg">
+            <img onclick="fullscreen()" class="images d-none" src="img/bild17.jpg">
+            <img onclick="fullscreen()" class="images d-none" src="img/bild5.jpg">
+            <img onclick="fullscreen()" class="images d-none" src="img/bild7.jpg">
+            <img onclick="fullscreen()" class="images d-none" src="img/bild9.jpg">
+            <img onclick="fullscreen()" class="images d-none" src="img/bild10.jpg">
+            <img onclick="fullscreen()" class="images d-none" src="img/bild14.jpg">
+            <img onclick="fullscreen()" class="images d-none" src="img/bild15.jpg">
+            <img onclick="fullscreen()" class="images d-none" src="img/bild18.jpg">
+            <img onclick="fullscreen()" class="images d-none" src="img/bild19.jpg">
+            <img onclick="fullscreen()" class="images d-none" src="img/bild23.jpg">
+            <img onclick="fullscreen()" class="images d-none" src="img/bild27.jpg">
+            <img onclick="fullscreen()" class="images d-none" src="img/bild3.jpg">
+            <img onclick="fullscreen()" class="images d-none" src="img/bild28.jpg">
+            <img onclick="fullscreen()" class="images d-none" src="img/bild5.jpg">
+            <img onclick="fullscreen()" class="images d-none" src="img/bild16.jpg">
+            <img onclick="fullscreen()" class="images d-none" src="img/bild20.jpg">
+            <img onclick="fullscreen()" class="images d-none" src="img/bild25.jpg">
+        </div>
+    </div>
+    <!--Vollbild Sektion-->
+    <div id="full-screen" class="full-screen d-none">
+        <img onclick="backToGallery()" src="icons/arrow.png" id="arrow" class="back-to-gallery" alt="backarrow">
+        <img onclick="previousImage()" src="icons/leftarrow.webp" id="leftArrow" class="previous-img" alt="leftarrow">
+        <img onclick="nextImage()" src="icons/rightarrow.webp" id="rightArrow" class="next-img" alt="rightarrow">
+    </div>
+    <footer>
+        <div>
+            <span>Bilder von </span>
+            <a href="https://pixabay.com">Pixabay</a>
+        </div>
+        <div class="footer-img-container">
+            <img class="footer-img" src="./img/facebook.png" alt="Facebook">
+            <img class="footer-img" src="./img/instagram.png" alt="Instagram">
+            <img class="footer-img" src="./img/twitter.png" alt="Twitter">
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
