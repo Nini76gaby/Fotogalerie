@@ -1,5 +1,5 @@
 let images=[
-    "img/bild1.jpg",
+    "img/bild 1.jpg",
     "img/bild4.jpg",
     "img/bild8.jpg",
     "img/bild13.jpg",
@@ -23,9 +23,47 @@ let images=[
 ];
 
 
-
-
 function render(){
- let content= document.getElementById('content');
- content.innerHTML='';
+ let content= document.getElementById("content");
+ for(let i=0; i<images.length; i++) {
+   let image=images[i];
+   content.innerHTML += `
+   <img onclick="openImage(${i})" class="images" src="${image}">
+   `;
+ }
 }
+
+function openImage(i){
+    document.getElementById('full-screen').classList.remove('d-none');
+    let imageSrc=images[i];
+    document.getElementById('container-fullscreen-img').innerHTML= `
+    <img src="${imageSrc}" class="images">
+    <img onclick="previousImage(${i})" id="leftArrow" class="previous-img" src="icons/leftarrow.webp">
+    <img onclick="nextImage(${i})" id="rightArrow" class="next-img" src="icons/rightarrow.webp">
+    
+    `;
+    }
+
+ function previousImage(i) {
+    if(i == 21) {
+        i = 0;
+        openImage(i);
+    } else {
+        openImage(i + 1);
+    }
+}
+
+ 
+ function nextImage(i) {
+     if(i == 0) {
+        i = 21;
+        openImage(i);
+     } else {
+        openImage(i - 1);
+      }
+ }
+
+    
+ function backToGallery() {
+        document.getElementById('full-screen').classList.add('d-none');
+    }
