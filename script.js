@@ -49,7 +49,7 @@ function openImage(i) {
 }
 
  function previousImage(i) {
-    if(i === 0) { // index gleich 0
+    if(i === 0) { 
         
         openImage(images.length -1 );
     } else {
