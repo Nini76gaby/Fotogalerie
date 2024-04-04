@@ -101,7 +101,7 @@ header {
 }
 
 .back-to-gallery {
-    position: absolute;
+    position: fixed;
     top: 100px;
     left: 24px;
     height: 24px;
@@ -149,7 +149,7 @@ header {
     display: none;
 }
 
-.full-screen {
+.full-screen{
     border: red 3px solid;
     position: fixed;
     inset: 0;
@@ -158,6 +158,13 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+}
+#container-fullscreen-img{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 footer {
