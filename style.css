@@ -89,8 +89,8 @@ h1 {
 
 .images {
 
-    width: 200px;
-    height: 200px;
+    width: 40%;
+    height: auto;
     filter: drop-shadow(0 0 0.75rem rgb(65, 60, 60));
     object-fit: contain;
     border-radius: 10px;
